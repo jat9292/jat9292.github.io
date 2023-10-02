@@ -4,6 +4,27 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<style>
+    .row {
+        display: flex;
+        justify-content: space-between;  /* This will space the columns evenly */
+    }
+
+    .column {
+        flex-basis: 30%;  /* Each column will take up about 30% of the row width. Adjust this as needed. */
+        margin-bottom: 40px;
+    }
+
+    .column h3 {
+        max-width: 250px;  /* Set this width to an appropriate value to allow wrapping as needed */
+        word-wrap: break-word;  /* This ensures long words can break across lines */
+    }
+
+    .column img {
+        height: 300px;
+        width: 300px;
+    }
+</style>
 <html>
 	<head>
 		<title>JAT's den</title>
@@ -17,7 +38,7 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.png" alt="" /></a>
-					<h1><strong>I am JAT</strong>, <br>a Web3 developer now focused on smart contract security. <br> Previously worked as a data scientist for a few years.</h1>
+					<h1><strong>I am JAT</strong>, <br>a Web3 developer now focused on smart contract and Zero-Knowledge development and security. <br> Previously worked as a data scientist for a few years.</h1>
 				</div>
 			</header>
 
@@ -37,43 +58,41 @@
 					<section id="two">
 						<h2>Recent Work</h2>
 						<div class="row">
-							<div style='margin-bottom: 40px;'>
+							<div class="column">
+								<a href="https://medium.com/@jat9292/zksnarks-homomorphic-encryption-ethereums-privacy-new-frontier-b30357236a7a" class="image fit thumb">
+									<img src="images/thumbs/pt.webp" /></a>
+								<h3>zkSNARKs & Homomorphic Encryption : Ethereum’s Privacy New Frontier</h3>
+							</div>
+							<div class="column">
 								<a href="https://medium.com/@jat9292/sg-forges-coinvertible-stablecoin-or-stumblecoin-31e4b627fa67" class="image fit thumb">
-									<img src="images/thumbs/sg.webp" height="300px" width="300px"/></a>
-								
+									<img src="images/thumbs/sg.webp" /></a>
 								<h3>SG Forge’s CoinVertible: Stablecoin or Stumblecoin?</h3>
 							</div>
-							<div style='margin-bottom: 40px;'>
+							<div class="column">
 								<a href="https://medium.com/@jat9292/building-a-smart-contracts-fuzzer-for-fun-and-profit-1f73323c2b4d" class="image fit thumb">
-									<img src="images/thumbs/fuzzing.webp" height="300px" width="300px"/></a>
-								
+									<img src="images/thumbs/fuzzing.webp" /></a>
 								<h3>Fuzzing Like A Smarter Degen</h3>
 							</div>
-								<br>
-							<div style='margin-bottom: 40px;'>
+
+							<div class="column">
 								<a href="https://medium.com/@jat9292/beating-the-damn-vulnerable-defi-ctf-part-2-2-e6f1e14daae3" class="image fit thumb">
 									<img src="images/thumbs/eth_hacker2.jpeg" height="300px" width="300px"/></a>
 								
 								<h3>Solutions to Damn Vulnerable DeFi CTF 2/2</h3>
-								</div>
+							</div>
 
-							<div style='margin-bottom: 40px;'>
+							<div class="column">
 							<a href="https://medium.com/@jat9292/beating-the-damn-vulnerable-defi-ctf-challenges-part-1-2-7660dab2a7d6" class="image fit thumb">
 								<img src="images/thumbs/eth_hacker.jpeg" height="300px" width="300px"/></a>
 							
 							<h3>Solutions to Damn Vulnerable DeFi CTF 1/2</h3>
 							</div>
 							<p></p>
-							<div style='margin-bottom: 40px;'>
+							<div class="column">
 							<a href="https://github.com/jat9292/NFT_marketplace" class="image fit thumb"><img src="images/thumbs/NFT_marketplace.png" height="300px" width="300px"  /></a>
 							
 							<h3>An NFT Market Place built from scratch</h3>
 							</div>
-
-
-
-
-
 						</div>
 
 					</section>
